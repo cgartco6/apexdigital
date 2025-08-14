@@ -1,0 +1,27 @@
+# Ignore sensitive files
+secure-config/
+.env
+*.env
+*.key
+*.pem
+config.php
+database_credentials.txt
+
+# Ignore system files
+.DS_Store
+.htaccess
+
+# Ignore deployment scripts
+deploy-script.sh
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore node modules
+node_modules/
+
+# Ignore build artifacts
+build/
+dist/
+*.log
