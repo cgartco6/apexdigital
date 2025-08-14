@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Dashboard | Apex Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <i class="fas fa-brain logo-icon"></i>
+            <span>Apex Digital</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
+            <li><a href="#"><i class="fas fa-project-diagram"></i> <span>Projects</span></a></li>
+            <li><a href="#"><i class="fas fa-money-bill-wave"></i> <span>Revenue</span></a></li>
+            <li><a href="#"><i class="fas fa-hand-holding-usd"></i> <span>Payouts</span></a></li>
+            <li><a href="#"><i class="fas fa-robot"></i> <span>AI Agents</span></a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> <span>Settings</span></a></li>
+            <li><a href="#"><i class="fas fa-shield-alt"></i> <span>Security</span></a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">
+            <h1>Owner Dashboard</h1>
+            <div class="user-info">
+                <div class="user-avatar">AD</div>
+                <div>
+                    <div class="user-name">Apex Digital Admin</div>
+                    <div class="user-role">Owner</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-header">
+                    <div class="stat-title">Total Revenue</div>
+                    <div class="stat-icon" style="background: rgba(139, 92, 246, 0.1); color: var(--accent);">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                </div>
+                <div class="stat-value">R 248,560</div>
+                <div class="stat-change positive">
+                    <i class="fas fa-arrow-up"></i> 12.5% from last month
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-header">
+                    <div class="stat-title">Active Projects</div>
+                    <div class="stat-icon" style="background: rgba(59, 130, 246, 0.1); color: var(--primary);">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                </div>
+                <div class="stat-value">42</div>
+                <div class="stat-change positive">
+                    <i class="fas fa-arrow-up"></i> 5 new projects
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-header">
+                    <div class="stat-title">AI Agents</div>
+                    <div class="stat-icon" style="background: rgba(16, 185, 129, 0.1); color: var(--success);">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                </div>
+                <div class="stat-value">27</div>
+                <div class="stat-change positive">
+                    <i class="fas fa-check-circle"></i> All systems operational
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-header">
+                    <div class="stat-title">Next Payout</div>
+                    <div class="stat-icon" style="background: rgba(245, 158, 11, 0.1); color: var(--warning);">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                </div>
+                <div class="stat-value">R 89,424</div>
+                <div class="stat-change">
+                    Scheduled: <span id="next-payout-date">31 Oct 2023</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts and Tables -->
+        <div class="content-grid">
+            <div class="chart-container">
+                <h2 class="section-title">Revenue Overview</h2>
+                <div class="chart">
+                    <div class="revenue-chart">
+                        <div class="chart-bar" style="height: 40%;"><div class="chart-label">Jan</div></div>
+                        <div class="chart-bar" style="height: 55%;"><div class="chart-label">Feb</div></div>
+                        <div class="chart-bar" style="height: 70%;"><div class="chart-label">Mar</div></div>
+                        <div class="chart-bar" style="height: 65%;"><div class="chart-label">Apr</div></div>
+                        <div class="chart-bar" style="height: 80%;"><div class="chart-label">May</div></div>
+                        <div class="chart-bar" style="height: 75%;"><div class="chart-label">Jun</div></div>
+                        <div class="chart-bar" style="height: 90%;"><div class="chart-label">Jul</div></div>
+                        <div class="chart-bar" style="height: 85%;"><div class="chart-label">Aug</div></div>
+                        <div class="chart-bar" style="height: 95%;"><div class="chart-label">Sep</div></div>
+                        <div class="chart-bar" style="height: 100%;"><div class="chart-label">Oct</div></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <h2 class="section-title">Recent Projects</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Client</th>
+                            <th>Status</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>E-commerce Chatbot</td>
+                            <td>Retail Solutions SA</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                            <td>R 24,500</td>
+                        </tr>
+                        <tr>
+                            <td>Marketing Dashboard</td>
+                            <td>Growth Marketing</td>
+                            <td><span class="status-badge in-progress">In Progress</span></td>
+                            <td>R 32,000</td>
+                        </tr>
+                        <tr>
+                            <td>AI Security System</td>
+                            <td>SecureTech</td>
+                            <td><span class="status-badge in-progress">In Progress</span></td>
+                            <td>R 45,800</td>
+                        </tr>
+                        <tr>
+                            <td>WordPress Website</td>
+                            <td>Local Restaurant</td>
+                            <td><span class="status-badge pending">Pending</span></td>
+                            <td>R 8,900</td>
+                        </tr>
+                        <tr>
+                            <td>Social Media Bots</td>
+                            <td>Digital Agency</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                            <td>R 18,750</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Payouts Section -->
+        <div class="payouts">
+            <h2 class="section-title">Payout Schedule</h2>
+            <div class="payout-card">
+                <div class="payout-info">
+                    <div class="payout-amount">R 62,304</div>
+                    <div class="payout-date">15 Sep 2023</div>
+                </div>
+                <div class="payout-status paid">Paid</div>
+            </div>
+            <div class="payout-card">
+                <div class="payout-info">
+                    <div class="payout-amount">R 58,940</div>
+                    <div class="payout-date">30 Sep 2023</div>
+                </div>
+                <div class="payout-status paid">Paid</div>
+            </div>
+            <div class="payout-card">
+                <div class="payout-info">
+                    <div class="payout-amount">R 72,150</div>
+                    <div class="payout-date">15 Oct 2023</div>
+                </div>
+                <div class="payout-status paid">Paid</div>
+            </div>
+            <div class="payout-card">
+                <div class="payout-info">
+                    <div class="payout-amount">R 89,424</div>
+                    <div class="payout-date">31 Oct 2023</div>
+                </div>
+                <div class="payout-status pending">Pending</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
